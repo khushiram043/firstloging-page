@@ -4,17 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loging page</title>
+    <style>
+        header{
+            background-color: rgb(15, 3, 3);
+            text-align: center;
+            padding-top: 5px;
+            color: white;
+        }
+        form{
+            padding-top: 20px;
+        }
+        .dat{
+            background-color: rgb(199, 199, 199);
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            padding-top: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px grey;
+            
+        }
+        label{
+            padding-left: 30px;
+        }
+        .inp{
+            float: right;
+            padding-right: 30px;
+        }
+        .but{
+            margin-left: 100px;
+            gap: 20px;
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .dat:hover{
+            background-image: url(https://old.niilmuniversity.ac.in/images/h-about.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.5s;
+
+        }
+        .but:hover{
+            background-color: rgb(29, 26, 26);
+            transition: left 0.5s;
+            color: white;
+            font-size: 18px;
+
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Login Page</h1>
-    <form action="/submit-login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="submit" value="Login">
+    <header>
+       <h1>Welcome to the Login Page</h1>
+    </header>
+    <form>
+        <div class="dat">
+         <label for="Name">Name:</label>
+         <input type="text"name="Name" required="" class="inp"/><br><br>
+         <label for="father name">Father's Name:</label>
+         <input type="text" name="father name" required="" class="inp"/><br><br>
+         <label for="class">Class</label>
+         <input types="text" name="class" required="" class="inp"/><br><br>
+         <label for="phone Number"> phone Number</label>
+         <input type="text" name="phone Number" required="" class="inp"/><br><br>
+         <label for="Email i'd">Email</label>
+         <input type="text" name="email" id="email" required="" class="inp"/><br><br>
+         <label for="password">Password:</label>
+         <input type="password" name="password" required="" class="inp"><br><br>
+         <input type="submit" value="Submit" id="submit" class="but"/>
+         <input type="button" value="login" id="login" class="but"/>
+         </div>
+
     </form>
     
 </body>
